@@ -1,0 +1,17 @@
+[
+  {
+    "title": "JavaScript",
+    "subs": ["General", "High Order Array Methods"],
+    "icon": "icons/js.svg"
+  },
+  {
+    "title": "React",
+    "subs": ["General", "Hooks"],
+    "icon": "icons/react.svg"
+  },
+  {
+    "title": "TypeScript",
+    "subs": ["General", "Types"],
+    "icon": "icons/ts.svg"
+  }
+]

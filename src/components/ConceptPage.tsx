@@ -6,10 +6,8 @@ import data from '../../data/category.json'
 
 const ConceptPage = () => {
     const params = useParams()
-    const cat = data.filter(cat => cat.title === params.id )
-    const { title, subs, icon } = cat[0]
-
-    console.log(title)
+    const cat = data.filter(cat => cat.title === params.id );
+    const { title, subs, icon } = cat[0];
 
   return (
     <div className={styles.container}>

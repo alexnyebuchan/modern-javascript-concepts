@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from '../styles/HomePage.module.scss'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className={styles.container}>Homepage</div>
   )
 }
 

@@ -8,13 +8,13 @@ import ConceptPage from "./components/ConceptPage"
 function App() {
   return (
     <div className={styles.container}>
-      <Sidebar/>
       <Router>
+        <Sidebar/>
         <Routes> 
           <Route path="/" element={<HomePage />} />
           <Route path="/:id" element={<ConceptPage />} />
         </Routes>
-      </Router>
+        </Router>
 
     </div>
   )

@@ -1,3 +1,26 @@
+@import './colours.module';
+
 .container {
-    padding: 100px;
+    margin: 0;
+    padding: 50px;
+    width: 350px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: $yellow;
+    color: $black;
+    h1 {
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    a {
+        display: block;
+        padding: 16px;
+        margin: 5px;
+        text-decoration: none;
+        border: 2px solid $brown;
+        background-color: $gold;
+        color: $black;
+        border-radius: 7px;
+    }
 }

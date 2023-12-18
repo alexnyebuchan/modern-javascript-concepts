@@ -14,8 +14,10 @@
         margin-bottom: 60px;
     }
     a {
-        display: block;
-        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 21px;
         margin: 5px;
         text-decoration: none;
         border: 2px solid $brown;

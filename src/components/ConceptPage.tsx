@@ -3,11 +3,16 @@ import {useParams } from 'react-router-dom';
 
 import data from '../../data/category.json'
 
+interface Cat {
+    title: string,
+    subs: [],
+    icon: string
+}
 
 const ConceptPage = () => {
     const params = useParams()
-    const cat = data.filter(cat => cat.title === params.id );
-    const { title, subs, icon } = cat[0];
+    const cat= data.filter(cat => cat.title === params.id )[0];
+    const { title, subs, icon } = cat;
 
   return (
     <div className={styles.container}>

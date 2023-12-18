@@ -13,6 +13,7 @@ function App() {
         <Routes> 
           <Route path="/" element={<HomePage />} />
           <Route path="/:id" element={<ConceptPage />} />
+          <Route path="/:id/:id" element={<ConceptPage />} />
         </Routes>
         </Router>
 

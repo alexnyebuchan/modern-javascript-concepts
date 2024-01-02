@@ -29,7 +29,7 @@ const [hoveredLink, setHoveredLink] = useState(null)
                     <ul className={styles.subMenu} onMouseLeave={() => handleHover(null)}>
                     {cat.subs.map((sub, index) => (
                         <li key={index}>
-                            <Link to={`/${cat.title}/${sub}`}>{sub}</Link>
+                            <Link to={`/${cat.title}/${sub}`}>{sub}<FontAwesomeIcon icon={faChevronRight} /></Link>
                         </li>
                     ))}
                 </ul>

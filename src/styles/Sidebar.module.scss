@@ -16,6 +16,7 @@
     a {
         display: flex;
         justify-content: space-between;
+        width: 250px;
         align-items: center;
         padding: 16px 21px;
         margin: 5px;
@@ -25,22 +26,35 @@
         color: $black;
         border-radius: 7px;
         &:hover{
-            background-color: $red;
+            background-color: $yellow;
 
         }
+    }
+    div {
+        display: flex;
+      
     }
 }
 
 .subMenu {
     position: fixed;
-    padding: 0;
+    padding: 0 6px;
     margin: 0;
-    left: 400px;
+    left: 360px;
     list-style: none;
     text-decoration: none;
-    background-color: $red;
+    background-color: $yellow;
+    // border: 2px solid black;
+    width: 300px;
    li {
     margin: 0;
     padding: 0;
+   }
+   a {
+    background-color: $gold;
+    // padding: 10px 14px;
+    &:hover {
+        background-color: $yellow;
+    }
    }
 }

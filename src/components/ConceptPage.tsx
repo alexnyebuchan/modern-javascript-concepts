@@ -1,26 +1,8 @@
-import styles from '../styles/ConceptPage.module.scss'
-import {useParams } from 'react-router-dom';
-
-import data from '../../data/category.json'
-
-interface Cat {
-    title: string,
-    subs: [],
-    icon: string
-}
+import React from 'react'
 
 const ConceptPage = () => {
-    const params = useParams()
-    const cat= data.filter(cat => cat.title === params.id )[0];
-    const { title, subs, icon } = cat;
-
   return (
-    <div className={styles.container}>
-        <h1>{title} <img className={styles.icon} src={icon} alt="" /></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam corrupti. Eos similique dolorem qui. Ipsum, soluta maiores optio eaque sed perspiciatis, iste consectetur omnis, aspernatur tenetur dolor fuga officia.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam corrupti. Eos similique dolorem qui. Ipsum, soluta maiores optio eaque sed perspiciatis, iste consectetur omnis, aspernatur tenetur dolor fuga officia.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam corrupti. Eos similique dolorem qui. Ipsum, soluta maiores optio eaque sed perspiciatis, iste consectetur omnis, aspernatur tenetur dolor fuga officia.</p>
-    </div>
+    <div>ConceptPage</div>
   )
 }
 

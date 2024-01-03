@@ -32,27 +32,44 @@
     }
     div {
         display: flex;
-      
     }
 }
 
 .subMenu {
     position: fixed;
-    padding: 0 6px;
+    padding: 0;
     margin: 0;
     left: 360px;
     list-style: none;
     text-decoration: none;
     background-color: $yellow;
-    // border: 2px solid black;
-    width: 300px;
+   li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+   }
+   a {
+    padding: 10px 14px;
+    &:hover {
+        background-color: $yellow;
+    }
+   }
+}
+
+.itemMenu {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    left: 652px;
+    list-style: none;
+    text-decoration: none;
+    background-color: $yellow;
    li {
     margin: 0;
     padding: 0;
    }
    a {
-    background-color: $gold;
-    // padding: 10px 14px;
+    padding: 6px 10px;
     &:hover {
         background-color: $yellow;
     }

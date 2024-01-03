@@ -1,0 +1,17 @@
+[
+    {   
+        "title": "Map",
+        "category": "High Order Array Methods",
+        "content": "Map is a high order array method blah blah lorem"
+    },
+    {   
+        "title": "Filter",
+        "category": "High Order Array Methods",
+        "content": "Filter is a high order array method blah blah lorem"
+    },
+    {   
+        "title": "useRef",
+        "category": "Hooks",
+        "content": "Hooks are a high order array method blah blah lorem"
+    }
+]

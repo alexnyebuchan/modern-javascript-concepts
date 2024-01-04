@@ -10,5 +10,11 @@
         "category": "Methods",
         "content": "<p>The .slice() method is a built-in JavaScript <b>function</b> that extracts a certain section of an array or string, returning a new array or string without affecting the original.</p><p>.slice() takes in <b>two parameters</b>: the starting index where extraction begins; the ending index where it stops. If no second parameter is provided then the function keeps going till the end of the array or string. Negative values such as -1 refer to the end or last element or character.</p><p>Below is an example, where an array of numbers and a string have sections extracted:</p>",
         "gist": "alexnyebuchan/8a5f751e1faed04e953966fd631fbc21" 
+    },
+    {   
+        "title": "Methods",
+        "category": "JavaScript",
+        "content": "<p>Methods are functions that are used on objects. Common examples would be .filter(), .map(), .slice(), as these are part of built-in JavaScript objects such as Array.prototype or String.prototype.</p><p>In contrast, there are standalone functions that are not used on any objects, such as setTimeout() or Math.random(). These are not methods but regular in-built functions.</p>",
+        "gist": "alexnyebuchan/c9d7909c96d5ba9edaa399ec366118cd"
     }
 ]

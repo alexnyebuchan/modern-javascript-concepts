@@ -1,8 +1,24 @@
 [
     {   
-        "title": "Map",
+        "title": ".map()",
         "category": "Array Methods",
-        "content": "Map is a high order array method blah blah lorem"
+        "content": "Map is a high order array method blah blah lorem",
+        "gist": "alexnyebuchan/7a2bf4e3151ebf847dc6050e5f6f9bbb"
+    },
+    {   
+        "title": ".slice()",
+        "category": "Array Methods",
+        "content": "Slice is a high order array method blah blah lorem"
+    },
+    {   
+        "title": ".filter()",
+        "category": "Array Methods",
+        "content": "Filter is a high order array method blah blah lorem"
+    },
+    {   
+        "title": ".addEventListener",
+        "category": "DOM",
+        "content": "adddddddddddddddd is a high order array method blah blah lorem"
     },
     {   
         "title": "Filter",
@@ -20,7 +36,7 @@
         "content": "DOMDOMDOMDOMDOM method blah blah lorem"
     },
     {   
-        "title": "useRef",
+        "title": "useRef()",
         "category": "Hooks",
         "content": "Hooks arsfdffhjjjjjjjjj"
     }

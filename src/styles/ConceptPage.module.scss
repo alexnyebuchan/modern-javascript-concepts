@@ -1,0 +1,41 @@
+@import './colours.module';
+
+.container {
+    background-color: $black;
+    height: 100vh;
+    padding: 15px 200px;
+    margin-left: 400px;
+    h1, h3, p {
+        color: $cream;
+    }
+    h1 {
+        font-size: 90px;
+    }
+    h3 {
+        font-size: 45px;
+    }
+    span {
+        color: $red;
+    }
+  
+}
+
+.icon {
+    height: 90px;
+    width: 90px;
+    color: $cream;
+    margin-left: 40px;
+}
+
+.gistTitle {
+    display: none;
+}
+
+.gistContent {
+    margin-top: 30px;
+    tbody {
+        background-color: $cream;
+        
+    }
+    color: white;
+}

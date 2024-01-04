@@ -2,7 +2,7 @@
 
 .container {
     margin: 0;
-    padding: 50px;
+    padding: 10px 45px;
     width: 350px;
     position: fixed;
     height: 100%;
@@ -11,7 +11,7 @@
     color: $black;
     h1 {
         font-size: 60px;
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
     }
     a {
         display: flex;
@@ -24,7 +24,6 @@
         border: 2px solid $brown;
         background-color: $gold;
         color: $black;
-        border-radius: 7px;
         &:hover{
             background-color: $yellow;
 
@@ -37,41 +36,60 @@
 
 .subMenu {
     position: fixed;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-    left: 360px;
+    left: 350px;
     list-style: none;
     text-decoration: none;
-    background-color: $yellow;
    li {
-    display: flex;
-    margin: 0;
-    padding: 0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        max-height: 50px;
+        border: 1px solid $black;
+
    }
    a {
-    padding: 10px 14px;
-    &:hover {
+        width: 200px;
+        align-items: center;
+        padding: 16px 21px;
+        margin: 0;
+        text-decoration: none;
+        border: 0;
         background-color: $yellow;
+        color: $black;
+        border-radius: 0;
+        
+    &:hover {
+        background-color: $cream;
     }
+   }
+   ul {
+    padding: 0;
+    
    }
 }
 
-.itemMenu {
+.conceptMenu {
     position: fixed;
     padding: 0;
     margin: 0;
-    left: 652px;
     list-style: none;
     text-decoration: none;
     background-color: $yellow;
+    left: 603px;
+    
    li {
     margin: 0;
     padding: 0;
+    max-height: 32px;
+
    }
    a {
-    padding: 6px 10px;
+    background-color: $red;
+    color: $cream;
     &:hover {
-        background-color: $yellow;
+        background-color: $brown;
     }
    }
 }

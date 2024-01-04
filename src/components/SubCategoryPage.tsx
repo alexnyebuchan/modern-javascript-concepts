@@ -9,8 +9,6 @@ const SubCategoryPage = () => {
     const {categoryId, subId} = useParams()
     const [concept, setConcept] = useState({})
 
-    const cat = categoryData.filter(cat => cat.title === categoryId )[0];
-    const {title, icon} = cat 
 
 
     useEffect(() => {
@@ -26,7 +24,6 @@ const SubCategoryPage = () => {
 
   return (
     <div className={styles.container}>
-        <h1>{title} <img className={styles.icon} src={icon} alt="" /></h1>
         <h3>{subId}</h3>
         <p>{concept.content}</p>
     </div>

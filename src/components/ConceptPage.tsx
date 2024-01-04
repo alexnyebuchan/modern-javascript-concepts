@@ -14,8 +14,6 @@ const ConceptPage = () => {
     const {categoryId, subId, conceptId} = useParams()
     const [concept, setConcept] = useState({})
 
-    const cat = categoryData.filter(cat => cat.title === categoryId )[0];
-    const {title, icon} = cat 
 
 
     useEffect(() => {
@@ -43,6 +41,7 @@ const ConceptPage = () => {
             errorClass="gist__error"
             />
         )}
+        <p>{categoryId} {subId}: {conceptId}</p>
     </div>
   )
 }

@@ -4,7 +4,6 @@ import styles from '../styles/ConceptPage.module.scss'
 
 import { useParams } from 'react-router-dom';
 
-import categoryData from '../../data/category.json'
 import conceptData from '../../data/concepts.json'
 
 import ReactEmbedGist from 'react-embed-gist';
@@ -13,8 +12,6 @@ import ReactEmbedGist from 'react-embed-gist';
 const ConceptPage = () => {
     const {categoryId, subId, conceptId} = useParams()
     const [concept, setConcept] = useState({})
-
-
 
     useEffect(() => {
         findConcept(conceptId)

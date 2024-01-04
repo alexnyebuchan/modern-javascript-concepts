@@ -35,6 +35,7 @@ const Nav = () => {
     return (
         <div className={styles.container} >
             <h1>Modern JavaScript Concepts</h1>
+            <div className={styles.navLinks}>
             {categoryData.map((cat) => (
                 <div key={cat.title} >
                     <Link to={`/${cat.title}`} 
@@ -61,6 +62,7 @@ const Nav = () => {
                     )}
                 </div>
             ))}
+            </div>
         </div>
     )
 }

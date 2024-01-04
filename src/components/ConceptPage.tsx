@@ -28,11 +28,13 @@ const ConceptPage = () => {
         setConcept(foundConcept)
     }
 
+    const body = {__html:concept.content};
+
 
   return (
     <div className={styles.container}>
         <h3>{subId}: <span>{conceptId}</span></h3>
-        <p>{concept.content}</p>
+        <div className={styles.body} dangerouslySetInnerHTML={body}></div>
         {concept.gist && (
             <ReactEmbedGist
             gist={concept.gist}

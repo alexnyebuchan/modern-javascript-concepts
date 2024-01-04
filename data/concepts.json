@@ -1,43 +1,14 @@
 [
     {   
         "title": ".map()",
-        "category": "Array Methods",
-        "content": "<p>The .map() method is a higher-order function that iterates over elements in an array, applies a callback function to each, then creates a new array with the results of this function contained.</p><p>It does not change the original array, rather creates a new, modified one. Within the parentheses, a maximum of three arguments can be taken. First, the current element being processed, then the index of that element, then finally the original array the method was called on.</p><p>.map() is particularly useful when creating multiple components from an array in React. For each element a function is applied that creates a new component that appears in the browser.</p><p>Here is an example below, where each number in the 'numbers' array is iterated over, passed into a function that doubles the number, before returning the new array 'doubledNumbers' which will return all the elements doubled.</p>",
+        "category": "Methods",
+        "content": "<p>The .map() method is a <b>Higher-Order Function (HOF)</b> that iterates over elements in an array, applies a callback function to each, then creates a new array with the results of this function contained.</p><p>It does not change the original array, rather creates a new, modified one. Within the parentheses, a maximum of <b>three parameters</b> can be taken. First, the current element being processed, then the index of that element, then finally the original array the method was called on.</p><p>.map() is particularly useful when creating multiple components from an array in React. For each element a function is applied that creates a new component that appears in the browser.</p><p>Here is an example below, where each number in the 'numbers' array is iterated over, passed into a function that doubles the number, before returning the new array 'doubledNumbers' which will return all the elements doubled.</p>",
         "gist": "alexnyebuchan/7a2bf4e3151ebf847dc6050e5f6f9bbb"
     },
     {   
         "title": ".slice()",
-        "category": "Array Methods",
-        "content": "Slice is a high order array method blah blah lorem"
-    },
-    {   
-        "title": ".filter()",
-        "category": "Array Methods",
-        "content": "Filter is a high order array method blah blah lorem"
-    },
-    {   
-        "title": ".addEventListener",
-        "category": "DOM",
-        "content": "adddddddddddddddd is a high order array method blah blah lorem"
-    },
-    {   
-        "title": "Filter",
-        "category": "High Order Array Methods",
-        "content": "Filter is a high order array method blah blah lorem"
-    },
-    {   
-        "title": "Array Methods",
-        "category": "JavaScript",
-        "content": "Array is a high order array method blah blah lorem"
-    },
-    {   
-        "title": "DOM",
-        "category": "JavaScript",
-        "content": "DOMDOMDOMDOMDOM method blah blah lorem"
-    },
-    {   
-        "title": "useRef()",
-        "category": "Hooks",
-        "content": "Hooks arsfdffhjjjjjjjjj"
+        "category": "Methods",
+        "content": "<p>The .slice() method is a built-in JavaScript <b>function</b> that extracts a certain section of an array or string, returning a new array or string without affecting the original.</p><p>.slice() takes in <b>two parameters</b>: the starting index where extraction begins; the ending index where it stops. If no second parameter is provided then the function keeps going till the end of the array or string. Negative values such as -1 refer to the end or last element or character.</p><p>Below is an example, where an array of numbers and a string have sections extracted:</p>",
+        "gist": "alexnyebuchan/8a5f751e1faed04e953966fd631fbc21" 
     }
 ]

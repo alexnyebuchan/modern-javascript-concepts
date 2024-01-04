@@ -1,23 +1,21 @@
 @import './colours.module';
 
 .container {
-    margin: 0;
-    padding: 10px 45px;
-    width: 350px;
+    width: 100%;
     position: fixed;
-    height: 100%;
+    height: 120px;
     overflow: auto;
     background-color: $yellow;
     color: $black;
+    display: flex;
     h1 {
-        font-size: 60px;
-        // margin-bottom: 60px;
+        font-size: 30px;
     }
     a {
         display: flex;
-        justify-content: space-between;
-        width: 250px;
-        align-items: center;
+        flex-direction: column;
+        height: 30px;
+        width: 80px;
         padding: 16px 21px;
         margin: 5px;
         text-decoration: none;
@@ -94,7 +92,7 @@
    }
 }
 
-@media (max-width: 1250px){
+@media (min-width: 1250px){
     .container {
         display: none;
     }

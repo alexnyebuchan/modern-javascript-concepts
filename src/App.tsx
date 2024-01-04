@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage"
 import MainCategoryPage from "./components/MainCategoryPage"
 import SubCategoryPage from './components/SubCategoryPage';
 import ConceptPage from './components/ConceptPage';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className={styles.container}>
       <Router>
         <Sidebar/>
+        <Nav />
         <Routes> 
           <Route path="/" element={<HomePage />} />
           <Route path="/:categoryId" element={<MainCategoryPage />} />

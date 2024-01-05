@@ -14,7 +14,7 @@
     {   
         "title": "Methods",
         "category": "JavaScript",
-        "content": "<p>Methods are functions that are used on objects. Common examples would be .filter(), .map(), .slice(), as these are part of built-in JavaScript objects such as Array.prototype or String.prototype.</p><p>In contrast, there are standalone functions that are not used on any objects, such as setTimeout() or Math.random(). These are not methods but regular in-built functions.</p>",
+        "content": "<p>Methods are functions that are used on objects. Common examples would be .filter(), .map(), .slice(), as these are part of built-in JavaScript objects such as Array.prototype or String.prototype.</p><p>In contrast, there are standalone functions that are not used on any objects, such as setTimeout() or Math.random(). These are not methods but regular in-built functions.</p><p>Examples of built-in methods used commonly on arrays and strings:</p>",
         "gist": "alexnyebuchan/c9d7909c96d5ba9edaa399ec366118cd"
     }
 ]

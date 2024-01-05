@@ -1,6 +1,5 @@
 import styles from '../styles/SubCategoryPage.module.scss'
 import { useParams } from 'react-router-dom';
-import categoryData from '../../data/category.json'
 import conceptData from '../../data/concepts.json'
 import { useEffect, useState } from 'react';
 import ReactEmbedGist from 'react-embed-gist';
@@ -10,6 +9,8 @@ import ReactEmbedGist from 'react-embed-gist';
 const SubCategoryPage = () => {
     const {categoryId, subId} = useParams()
     const [concept, setConcept] = useState({})
+    const [body, setBody] = useState({__html:""})
+    const [example, setExample] = useState({__html:""})
 
     useEffect(() => {
         findConcept(subId)
@@ -19,25 +20,44 @@ const SubCategoryPage = () => {
     function findConcept(id:string) {
         const foundConcept = conceptData.filter(concept => concept.title === id)[0]
         setConcept(foundConcept)
+        splitText(foundConcept.content)
     }
 
-    const body = {__html:concept.content};
+    function splitText (text:string) {
+      const textSplit = text.lastIndexOf('<p>')
+      const mainSection = text.substring(0, textSplit)
+      const exampleSection = text.substring(textSplit)
+      setBody({__html:mainSection})
+      setExample({__html:exampleSection})
+    }
+      
+    
+    
+    
+    
 
   return (
     <div className={styles.container}>
         <h3>{subId}</h3>
         <div className={styles.body} dangerouslySetInnerHTML={body}></div>
         {concept.gist && (
-            <ReactEmbedGist
-            gist={concept.gist}
-            contentClass={styles.gistContent}
-            titleClass={styles.gistTitle}
-            errorClass="gist__error"
+            <div className={styles.gistContainer}>
+              <div className={styles.exampleP} dangerouslySetInnerHTML={example}></div>
+              <ReactEmbedGist
+                  gist={concept.gist}
+                  contentClass={styles.gistContent}
+                  titleClass={styles.gistTitle}
+                  errorClass="gist__error"
+                  wrapperClass={styles.gistWrap}
             />
+            </div>
         )}
+
         <p>{categoryId} {subId}</p>
     </div>
   )
 }
 
 export default SubCategoryPage
+
+

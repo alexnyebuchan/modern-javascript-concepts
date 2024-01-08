@@ -8,7 +8,7 @@
     {   
         "title": ".slice()",
         "category": "Methods",
-        "content": "<p>The .slice() method is a built-in JavaScript <b>function</b> that extracts a certain section of an array or string, returning a new array or string without affecting the original.</p><p>.slice() takes in <b>two parameters</b>: the starting index where extraction begins; the ending index where it stops. If no second parameter is provided then the function keeps going till the end of the array or string. Negative values such as -1 refer to the end or last element or character.</p><p>Below is an example, where an array of numbers and a string have sections extracted:</p>",
+        "content": "<p>The .slice() method is a built-in JavaScript <b>function</b> that extracts a certain section of an array or string, returning a new array or string without affecting the original.</p><p>.slice() takes in <b>two parameters</b>: the starting index where extraction begins; the ending index where it stops. If no second parameter is provided then the function keeps going till the end of the array or string. Negative values such as -1 refer to the end or last element or character.</p><p>Here is an example, where an array of numbers and a string have sections extracted:</p>",
         "gist": "alexnyebuchan/8a5f751e1faed04e953966fd631fbc21" 
     },
     {   
@@ -16,5 +16,11 @@
         "category": "JavaScript",
         "content": "<p>Methods are functions that are used on objects. Common examples would be .filter(), .map(), .slice(), as these are part of built-in JavaScript objects such as Array.prototype or String.prototype.</p><p>In contrast, there are standalone functions that are not used on any objects, such as setTimeout() or Math.random(). These are not methods but regular in-built functions.</p><p>Examples of built-in methods used commonly on arrays and strings:</p>",
         "gist": "alexnyebuchan/c9d7909c96d5ba9edaa399ec366118cd"
+    },
+    {   
+        "title": ".filter()",
+        "category": "Methods",
+        "content": "<p>The .filter() method is a <b>Higher-Order Function (HOF)</b> that takes in a required callback function as a parameter, iterates over elements in an array and returns only the elements that meet a certain criteria into a new array. The callback should return a true value to include in the new array, or false to exclude.</p><p>It also takes an index and the original array as optional parameters.</p><p>In this example, an array of numbers is iterated over, with only numbers under 3 returning true in the callback function. The new array therefore only includes numbers under 3.</p>",
+        "gist": "alexnyebuchan/714f2bcf65b09b3a89f5e2b9ed4b7e05"
     }
 ]

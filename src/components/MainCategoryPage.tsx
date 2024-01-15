@@ -3,12 +3,6 @@ import {useParams } from 'react-router-dom';
 
 import data from '../../data/category.json'
 
-interface Cat {
-    title: string,
-    subs: [],
-    icon: string
-}
-
 const MainCategoryPage = () => {
     const params = useParams()
     const cat = data.filter(cat => cat.title === params.categoryId )[0];

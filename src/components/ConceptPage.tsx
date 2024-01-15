@@ -8,13 +8,22 @@ import conceptData from '../../data/concepts.json'
 
 import ReactEmbedGist from 'react-embed-gist';
 
+interface conceptType {
+    title: string;
+    category: string;
+    content: string;
+    gist: any;
+}
+
 
 const ConceptPage = () => {
-    const {categoryId, subId, conceptId} = useParams()
-    const [concept, setConcept] = useState({})
+    const {categoryId, subId, conceptId} = useParams<string>()
+    const [concept, setConcept] = useState<conceptType>({} as conceptType)
 
     useEffect(() => {
-        findConcept(conceptId)
+        if(conceptId){
+            findConcept(conceptId)
+        }
     }, [conceptId])
 
 
@@ -24,6 +33,8 @@ const ConceptPage = () => {
     }
 
     const body = {__html:concept.content};
+
+    console.log(concept.gist)
 
 
   return (

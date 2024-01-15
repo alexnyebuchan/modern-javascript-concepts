@@ -13,7 +13,7 @@ const Sidebar = () => {
     // State for pop up menus
     const [hoveredCat, setHoveredCat] = useState('')
     const [hoveredSub, setHoveredSub] = useState('')
-    const [concepts, setConcepts] = useState([])
+    const [concepts, setConcepts] = useState<string[]>([])
 
     // Functions for handling hover state
     const handleCatHover = (title:string) => {
@@ -26,7 +26,7 @@ const Sidebar = () => {
     } 
 
     const filterConcepts = (sub:string) => {
-            const filteredTitles: Array = conceptData
+            const filteredTitles = conceptData
             .filter(concept => concept.category === sub)
             .map(concept => concept.title)
             setConcepts(filteredTitles)

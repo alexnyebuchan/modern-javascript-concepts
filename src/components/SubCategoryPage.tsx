@@ -4,12 +4,7 @@ import conceptData from '../../data/concepts.json'
 import { useEffect, useState } from 'react';
 import ReactEmbedGist from 'react-embed-gist';
 
-interface conceptType {
-  title: string;
-  category: string;
-  content: string;
-  gist: any;
-}
+import { conceptType } from '../utils/Types';
 
 const SubCategoryPage = () => {
     const {categoryId, subId} = useParams<string>()
@@ -38,11 +33,6 @@ const SubCategoryPage = () => {
       setExample({__html:exampleSection})
     }
       
-    
-    
-    
-    
-
   return (
     <div className={styles.container}>
         <h3>{subId}</h3>

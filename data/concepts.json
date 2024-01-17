@@ -8,7 +8,7 @@
     {   
         "title": ".forEach()",
         "category": "Methods",
-        "content": "<p>forEach() is a <b>High-Order Array Method</b> used to iterate over elements in an array and executes a function on each. </p><p>In React, it is commonly preferred to use .map() instead, as this creates a new array, but forEach is useful for <b>updating state and performing side effects</b>.</p><p>It takes in the current iterated value, the index and the original array as parameters.</p><p>Here are two useful examples of forEach(). First is to simply log all the elements in an array, second is to update a count, both of which don't need to create a new array. The count is a basic example of how state can be updated using forEach()</p>",
+        "content": "<p>forEach() is a <b>Higher-Order Function (HOF)</b> used to iterate over elements in an array and executes a function on each. It takes in the current iterated value, the index and the original array as parameters.</p><p>In React, it is commonly preferred to use .map() instead, as this creates a new array, but forEach is useful for <b>updating state and performing side effects</b>.</p><p>Here are two useful examples of forEach(). First is to simply log all the elements in an array, second is to update a count, both of which don't need to create a new array. The count is a basic example of how state can be updated using forEach()</p>",
         "gist": "alexnyebuchan/8f2123541f836d93dc9fcdc79edfd100"
     },
     {   

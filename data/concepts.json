@@ -6,6 +6,12 @@
         "gist": "alexnyebuchan/7a2bf4e3151ebf847dc6050e5f6f9bbb"
     },
     {   
+        "title": ".forEach()",
+        "category": "Methods",
+        "content": "<p>forEach() is a <b>High-Order Array Method</b> used to iterate over elements in an array and executes a function on each. </p><p>In React, it is commonly preferred to use .map() instead, as this creates a new array, but forEach is useful for <b>updating state and performing side effects</b>.</p><p>It takes in the current iterated value, the index and the original array as parameters.</p><p>Here are two useful examples of forEach(). First is to simply log all the elements in an array, second is to update a count, both of which don't need to create a new array. The count is a basic example of how state can be updated using forEach()</p>",
+        "gist": "alexnyebuchan/8f2123541f836d93dc9fcdc79edfd100"
+    },
+    {   
         "title": ".slice()",
         "category": "Methods",
         "content": "<p>The .slice() method is a built-in JavaScript <b>function</b> that extracts a certain section of an array or string, returning a new array or string without affecting the original.</p><p>.slice() takes in <b>two parameters</b>: the starting index where extraction begins; the ending index where it stops. If no second parameter is provided then the function keeps going till the end of the array or string. Negative values such as -1 refer to the end or last element or character.</p><p>Here is an example, where an array of numbers and a string have sections extracted:</p>",

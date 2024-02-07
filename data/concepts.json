@@ -35,4 +35,10 @@
         "content": "<p>The .filter() method is a <b>Higher-Order Function (HOF)</b> that takes in a required callback function as a parameter, iterates over elements in an array and returns only the elements that meet a certain criteria into a new array. The callback should return a true value to include in the new array, or false to exclude.</p><p>It also takes an index and the original array as optional parameters.</p><p>In this example, an array of numbers is iterated over, with only numbers under 3 returning true in the callback function. The new array therefore only includes numbers under 3.</p>",
         "gist": "alexnyebuchan/714f2bcf65b09b3a89f5e2b9ed4b7e05"
     }
+    {   
+        "title": ".shift()",
+        "category": "Methods",
+        "content": "<p>.shift() is a simple in built JS method that removes the first item of an array.</p><p>It then moves all other elements in an array one space to the left, so index [1] becomes index [0]. If there are no more elements in the array, it returns undefined. The method takes in no parameters.</p>",
+        "gist": "alexnyebuchan/8fe76adf3ca626e0c037aacc52065a03"
+    }
 ]

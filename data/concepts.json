@@ -46,5 +46,11 @@
         "category": "Methods",
         "content": "<p>The .pop() method removes the last element in an array and returns that same removed element.</p><p>Here, the variable 'firstNumber' contains the removed element, and 'numbers' is modified to be shorter.</p>",
         "gist": "alexnyebuchan/cb39779e8a5cc913e2a3f57caa166075"
+    },
+    {   
+        "title": ".reduce()",
+        "category": "Methods",
+        "content": "<p>The .reduce() function iterates over an array and return a single result, boiling it down. For instance, this could be adding numbers in an array to get the sum.</p><p>It takes in an callback function as it's parameter, which is executed in each array element. The callback takes in two parameters of it's own: an accumulator or running total each time an iteration occurs; a current value which is the current element being processed.</p><p>An additional initial value parameter can be included in the root function which tells the reduce what value to start the accumulator on.</p>",
+        "gist": "alexnyebuchan/2f4d5fc29f377f9e988152ed3e2e1d07"
     }
 ]
